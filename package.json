@@ -5,9 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:tailwind": "tailwind build src/styles/tailwind/tailwind.css -o src/styles/tailwind/output.scss",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "npm run build:tailwind"
   },
   "private": true,
   "dependencies": {
