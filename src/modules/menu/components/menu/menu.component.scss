@@ -1,0 +1,15 @@
+@import '../../../../styles';
+
+header {
+  @extend .fixed;
+  @extend .flex;
+  @extend .shadow-md;
+  @extend .bg-white;
+
+  width: 100%;
+  height: $header-height;
+
+  .is-stretched {
+    @extend .flex-auto;
+  }
+}
