@@ -1,0 +1,9 @@
+@import '../../../../styles';
+
+:host {
+  @extend .px-6;
+
+  h1 {
+    @extend .text-2xl;
+  }
+}

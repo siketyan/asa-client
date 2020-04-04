@@ -1,0 +1,16 @@
+@import '../../../../styles';
+
+:host {
+  @extend .px-4;
+
+  input[type='text'] {
+    @extend .px-3;
+    @extend .py-1;
+    @extend .rounded-full;
+    @extend .border;
+  }
+
+  button {
+    @extend .px-2;
+  }
+}

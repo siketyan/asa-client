@@ -1,0 +1,17 @@
+@import '../../../../styles';
+
+:host {
+  div {
+    @extend .flex;
+    @extend .items-center;
+    @extend .h-full;
+  }
+
+  &.is-stretched {
+    @extend .flex-auto;
+  }
+
+  &:has(.is-stretched) {
+    @extend .flex-auto;
+  }
+}
