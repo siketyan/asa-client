@@ -1,0 +1,14 @@
+<li>
+  <span
+    [textContent]="model.name"
+    [class.has-children]="model.children"
+    [class.is-open]="isOpen"
+    (click)="toggle()"
+  ></span>
+  <div>
+    <app-navigator-tree
+      [items]="model.children"
+      [isOpen]="isOpen"
+    ></app-navigator-tree>
+  </div>
+</li>

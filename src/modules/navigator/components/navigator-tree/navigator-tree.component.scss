@@ -1,0 +1,10 @@
+@import '../../../../styles';
+
+ul {
+  @extend .overflow-hidden;
+  @extend .h-0;
+
+  &.open {
+    @extend .h-auto;
+  }
+}
