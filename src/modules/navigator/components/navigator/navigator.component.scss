@@ -1,0 +1,8 @@
+@import '../../../../styles';
+
+nav {
+  @extend .border-r;
+
+  width: 256px;
+  min-height: 100vh;
+}

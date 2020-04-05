@@ -1,0 +1,8 @@
+<ul
+  [class.open]="isOpen"
+>
+  <app-navigator-item
+    *ngFor="let item of items"
+    [model]="item"
+  ></app-navigator-item>
+</ul>

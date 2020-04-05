@@ -1,0 +1,43 @@
+@import '../../../../styles';
+
+li {
+  span {
+    @extend .block;
+    @extend .px-4;
+    @extend .py-1;
+    @extend .select-none;
+    @extend .cursor-pointer;
+
+    &:before {
+      @extend .inline-block;
+      @extend .mr-2;
+      @extend .font-bold;
+      @extend .text-gray-500;
+      @extend .text-center;
+
+      content: '・';
+      width: 1em;
+    }
+
+    &.has-children {
+      @extend .cursor-auto;
+
+      &:before {
+       content: '〉';
+      }
+    }
+
+    &.is-open:before {
+      @extend .transform;
+      @extend .rotate-90;
+    }
+
+    &:hover {
+      @extend .bg-gray-200;
+    }
+  }
+
+  div {
+    @extend .pl-3;
+  }
+}
